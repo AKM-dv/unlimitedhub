@@ -1,0 +1,116 @@
+## 🧑‍💼 **Admin View – Module-Wise Platform Breakdown**
+
+---
+
+### 🔐 1. **Authentication (Login & Identity)**
+
+- **OTP-based login** using mobile number
+- Auto-name suggestion if unavailable
+- State and location collection
+- Acts as **main Identity Provider** (for SSO with other apps)
+
+---
+
+### 🏠 2. **Main Dashboard (User Side)**
+
+- Bottom Navigation:
+    
+    → Voice Call | Video Call | Shop
+    
+- Top Bar:
+    
+    → Remaining Minutes | Remaining Diamonds
+    
+- Menu Items:
+    
+    → Call History | Recharge History | Refer & Earn | Contact | Leaderboard
+    
+- Remaining screen: **Ad Banners** (controlled by admin)
+
+---
+
+### 📞 3. **Calling System**
+
+### Voice Call:
+
+- Recharge system (₹29 → 19 min to ₹499 → 600 min + 600 Diamonds)
+- Free 10 mins only once (2 mins/call)
+
+### Video Call:
+
+- Charged via Diamonds (₹1 = 12 Diamonds)
+- ₹100 = 1200 Diamonds
+- Video Call rate = **60 Diamonds/min**
+- Females earn ₹1/min in wallet (usable only for shopping)
+
+---
+
+### 💎 4. **Wallet System**
+
+- Split into:
+    - **Minutes Wallet** (voice)
+    - **Diamonds Wallet** (video)
+    - **Earnings Wallet** (female user credit)
+- Auto-detection of wallet type depending on feature
+- Free minutes/diamonds via offers or admin rewards
+
+---
+
+### 🎁 5. **Referral System**
+
+- Male → Male: 10% Diamond bonus
+- Male → Female: 5%
+- Female → Male: 10%
+- Female → Female: 5%
+- Calculated on recharge amounts
+
+---
+
+### 🛒 6. **E-Commerce Module**
+
+- Shoppable items using **earned income**
+- Extra top-up allowed if income is insufficient
+- Delivery charges must be paid via external payment
+- Bonus: Purchases over ₹1000 → 300 free Diamonds
+
+---
+
+### 🚫 7. **Rules & Conditions**
+
+- Only M→F and F→M connections allowed
+- No repeat matches
+- Language fallback to Hindi with permission
+- Gender mismatch → **report + permanent block**
+- Minute deduction starts at call start; female earnings credited after each minute
+
+---
+
+### 🧑‍💼 8. **Admin Panel (Management Side)**
+
+### Voice & Video:
+
+- User activity logs
+- Call history reports
+- Recharge configurations
+- Daily/weekly/monthly call stats
+
+### E-Commerce:
+
+- Earnings & sales tracking
+- Order and inventory management
+- Chart-based performance analytics
+
+### Advertisement:
+
+- Add banners or videos
+- Set display frequency, duration
+- Assign action buttons (call/web/app) with links
+
+---
+
+### 🔗 9. **SSO to Shop Platform (If external)**
+
+- Generate JWT after login
+- Redirect to shop site with JWT in URL
+- Shop site auto-logs in the user after verifying token
+- Seamless experience with identity carried over

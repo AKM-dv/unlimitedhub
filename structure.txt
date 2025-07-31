@@ -1,0 +1,115 @@
+AUTHENTICATION FLOW (REVISED)
+Only OTP-Based Login (No password)
+
+Login Steps:
+
+User enters email
+
+OTP is sent (e.g., 6-digit)
+
+System checks:
+
+✅ If registered → Go to Home/Dashboard
+
+❌ If not registered → Go to Registration form
+
+🧑‍💻 REGISTRATION DETAILS
+Required Fields (Post-OTP if new user):
+Name
+
+Gender
+
+Age
+
+Profile picture
+
+Interests (multi-select)
+
+Location
+
+Orientation (optional)
+
+What you're looking for (optional)
+
+📞 CALLING SYSTEM (with ZEGO CLOUD API)
+VerboCloud Integration:
+Use VerboCloud API for both voice and video calls
+
+Audio Call:
+
+1-minute free
+
+Paid (in diamonds) per minute after 1 min
+
+Video Call:
+
+Paid from start
+
+Incoming Calls:
+
+Always free to receive
+
+Outgoing Calls:
+
+User must have sufficient diamonds
+
+If not, show top-up prompt
+
+💎 DIAMOND SYSTEM (In-App Currency)
+₹1 = 1 Diamond (admin can edit this later)
+
+Used for:
+
+Paid audio/video calls
+
+Future boosts, filters, etc.
+
+Top-up through:
+
+UPI, Wallet, Card
+
+Preset packages (₹100, ₹200, ₹500...)
+
+🧰 ADMIN PANEL – What Admin Can Do
+View/manage users
+
+View call & diamond usage stats
+
+Manage pricing per minute (audio/video)
+
+Set Diamond ↔ ₹ conversion
+
+View payments & top-up logs
+
+Control feature access (e.g., free calls, filters)
+
+✅ SELECTED FEATURE ADDITIONS (As per your final request)
+1. 🎯 General Filtering Preferences
+Allow users to filter profiles by:
+
+Gender
+
+Age range
+
+Location (radius or city)
+
+Interest match % (basic logic)
+
+2. 🎁 Daily Free Diamond (Login Reward)
+Users get 1 free diamond/day upon login
+
+Optional: reward streak system (e.g., 5 days = 10 diamonds)
+
+Encourages retention & engagement
+
+🚀 Final Summary of Flow
+Step	Action
+1️⃣	User opens app
+2️⃣	Enters email → OTP sent
+3️⃣	OTP verifies
+✅ Registered	→ Dashboard (see profiles, call options)
+❌ Not Registered	→ Registration screen (fill details)
+4️⃣	Can browse/filter profiles
+5️⃣	Can call users (audio/video via VerboCloud)
+6️⃣	Can top-up diamonds if needed
+🎁	Gets 1 free diamond on login daily
