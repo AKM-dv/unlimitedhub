@@ -507,6 +507,83 @@ body {
     font-size: 0.9rem;
 }
 
+/* Contact Section */
+.contact {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-dark);
+    border: 1px solid rgba(255, 107, 157, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.contact-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-pink);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-icon i {
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.contact-details h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+}
+
+.contact-details p {
+    color: var(--gray);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.contact-link {
+    display: inline-block;
+    color: var(--primary-pink);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--dark-pink);
+    transform: translateX(5px);
+}
+
 /* Download Section */
 .download {
     padding: 100px 0;
@@ -752,6 +829,28 @@ body {
     color: var(--primary-pink);
 }
 
+.footer-section .contact-info {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #333;
+}
+
+.footer-section .contact-info p {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.footer-section .contact-info a {
+    color: var(--primary-pink);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer-section .contact-info a:hover {
+    color: var(--secondary-pink);
+}
+
 .social-links {
     display: flex;
     gap: 1rem;
@@ -925,6 +1024,34 @@ body {
 
     .diamonds {
         padding: 60px 0;
+    }
+
+    .contact {
+        padding: 60px 0;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem;
+    }
+
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-icon i {
+        font-size: 1.5rem;
+    }
+
+    .contact-details h3 {
+        font-size: 1.3rem;
+    }
+
+    .contact-link {
+        font-size: 1rem;
     }
 
     .diamond-grid {
