@@ -393,4 +393,4 @@ document.querySelectorAll('.btn, .store-btn').forEach(button => {
     button.addEventListener('click', createRipple);
 });
 
-console.log('UnlimitedHearts landing page loaded successfully! 🎉'); 
+console.log('UnlimitedHearts landing page loaded successfully.');
