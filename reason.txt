@@ -1,0 +1,28 @@
+Dear Partner,
+
+Greetings. Below is the requested clarification for the Unlimited Hub project submission:
+
+1. Payment gateway use case  
+   - Purpose: enable prepaid recharges (voice minutes and diamonds) and top-ups for the in-app shopping module.  
+   - Flow: the gateway collects INR payments, maps them to a user’s recharge order, and credits the appropriate in-app wallets after a successful transaction. No external merchant settlements occur beyond this recharge workflow.
+
+2. Wallet classification  
+   - Type: closed wallet.  
+   - Rationale: users can spend the credited value only inside Unlimited Hub (voice minutes wallet, diamonds wallet, and earnings wallet). Balances are non-transferable, non-withdrawable, and limited to platform services and merchandise.
+
+3. Current product status  
+   - Web landing page (`index.html`) is presently a static marketing shell and does not yet host the functional web client.  
+   - Native app build is in pre-release; backend hooks for calls, wallet accounting, and commerce are still under integration, so no public stores listing exists yet.  
+   - Action: development team is wiring real data sources into the existing frontend and scheduling the first internal beta to unlock live functionality.
+
+4. Required updates & next steps  
+   - Ship MVP interactions on the website (authentication handoff and wallet snapshot placeholders).  
+   - Complete end-to-end QA on the Android build, then push to closed testing.  
+   - Once the payment module passes certification, capture and share an on-device screen recording that covers login, recharge, and payment gateway confirmation. We will provide this recording together with admin-panel proof once the build is stable.
+
+Thank you for your review. Please let us know if you require any additional compliance artifacts or specific recording guidelines.
+
+Regards,  
+Unlimited Hub Team
+
+
